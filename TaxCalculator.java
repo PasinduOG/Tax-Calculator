@@ -61,7 +61,7 @@ class TaxCalculator{
 		return a*i/(1-(1/Math.pow(1+i, n)));
 	}
 	
-	public static double getLeasingAmount(double amount,double annualRate, int year){
+	public static double getLeasingAmount(double amount,double annualRate,int year){
 		double pmt=amount;
 		double i=(annualRate/12.0)/100;
 		int n=year*12;
@@ -133,6 +133,7 @@ class TaxCalculator{
 					}
 			}
 		}while(true);
+		scanner.close();
 	}
 	
 	public static void withHoldingTax(){
@@ -174,6 +175,7 @@ class TaxCalculator{
 					}
 			}
 		}while(true);
+		scanner.close();
 	}
 	
 	public static void leasingTax(){
@@ -215,6 +217,7 @@ class TaxCalculator{
 					}
 			}
 		}while(true);
+		scanner.close();
 	}
 	
 	public static void rentTax() {
@@ -243,6 +246,7 @@ class TaxCalculator{
 				break L1;
 			}
 		}while(true);
+		scanner.close();
 	}
 	
 	public static void bankInterestTax() {
@@ -270,6 +274,7 @@ class TaxCalculator{
 				break L1;
 			}
 		}while(true);
+		scanner.close();
 	}
 	
 	public static void dividendTax() {
@@ -298,6 +303,7 @@ class TaxCalculator{
 				break L1;
 			}
 		}while(true);
+		scanner.close();
 	}
 	
 	public static void payableTax(){
@@ -327,6 +333,7 @@ class TaxCalculator{
 				break L1;
 			}
 		}while(true);
+		scanner.close();
 	}
 	
 	public static void incomeTax(){
@@ -356,6 +363,7 @@ class TaxCalculator{
 				break L1;
 			}
 		}while(true);
+		scanner.close();
 	}
 	
 	public static void ssclTax(){
@@ -383,6 +391,7 @@ class TaxCalculator{
 				break L1;
 			}
 		}while(true);
+		scanner.close();
 	}
 	
 	public static void monthlyInstallment(){
@@ -441,6 +450,7 @@ class TaxCalculator{
 				break L1;
 			}
 		}while(true);
+		scanner.close();
 	}
 	
 	public static void searchLeasingCategory(){
@@ -472,8 +482,8 @@ class TaxCalculator{
 							continue L3;
 						}else{
 							System.out.printf("Your monthly installment for 3 year leasing plan - %.2f\n",getMonthlyInstallment(lease,annualRate,3));
-							System.out.printf("Your monthly installment for 3 year leasing plan - %.2f\n",getMonthlyInstallment(lease,annualRate,4));
-							System.out.printf("Your monthly installment for 3 year leasing plan - %.2f\n",getMonthlyInstallment(lease,annualRate,5));
+							System.out.printf("Your monthly installment for 4 year leasing plan - %.2f\n",getMonthlyInstallment(lease,annualRate,4));
+							System.out.printf("Your monthly installment for 5 year leasing plan - %.2f\n",getMonthlyInstallment(lease,annualRate,5));
 							break L3;
 						}
 					}while(annualRate!=0);
@@ -489,6 +499,7 @@ class TaxCalculator{
 				break L1;
 			}
 		}while(true);
+		scanner.close();
 	}
 	
 	public static void findLeasingAmount(){
@@ -549,6 +560,7 @@ class TaxCalculator{
 				break L1;
 			}
 		}while(true);
+		scanner.close();
 	}
 	
 	public static void main(String args[]){
